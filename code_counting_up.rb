@@ -1,12 +1,9 @@
-number = 1
+number = 0
 
-100.times do 
-  puts number
-  number = number + 1
-  if number == 3
-  	puts "mined" 
-  end
-  if number == 5
-  	puts "minds"
+100.times do
+ number = number + 1
+    if number == 3
+     puts "mined"
+ else puts number
   end
 end
