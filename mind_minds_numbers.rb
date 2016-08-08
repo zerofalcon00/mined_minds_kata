@@ -1,6 +1,8 @@
-def one()
-	1
-end
-def mined_minds(number)
-  number
+
+def mined_minds (number)
+    if number % 3 == 0
+    	"mined"
+    elsif number % 5 == 0
+        "minds"
+    end
 end
