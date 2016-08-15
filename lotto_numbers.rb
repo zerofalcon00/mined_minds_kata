@@ -7,27 +7,33 @@ winning_numbers = ["1111","2222","3333","4444","5555","6666","7777","8888","9999
 my_ticket = "1110"
 	
 
-	winning_numbers.each_with_index
+def grand_bash
+		
+	end	winning_numbers.each do |winning_number|
 		counter = 0
-		if winning_numbers[0][0] == my_ticket [0] 
+		if winning_number[0] == my_ticket [0] 
 			counter += 1
-		   winning_numbers[0][1] == my_ticket [1] 
+		end
+		if winning_number[1] == my_ticket [1] 
 		    counter += 1
-		   winning_numbers[0][2] == my_ticket [2] 
+		end
+		if winning_number[2] == my_ticket [2] 
 		    counter += 1
-		   winning_numbers[0][3] == my_ticket [3] 
+		end 
+		if winning_number[3] == my_ticket [3] 
 		    counter += 1#add 1 to counter
+		end
 		#    counter == 2
 		#     puts "true"
 		# else
 		# 	puts    "false"
-		 puts counter
-		end
-
-		# if counter == 3
-		# 	puts "true"
-		# else
-		# 	puts "false"
+		 # puts counter
 		# end
-# 	end
+
+		if counter == 3
+			puts "true"
+		else
+			puts "false"
+		end
+	end
 # end

@@ -3,13 +3,13 @@
 #is a number in an array of numbers 
 #true or false
 # have one digit off  respond with true close but no cigar if returns winning number flase
-def grand_bash
+def winning_ticket?(my_ticket, winning_numbers)
  winning_numbers = ["1111","2222","3333","4444","5555","6666","7777","8888","9999","0000"]
  my_ticket = "1110"
 	
-
+ counter = 0
 	winning_numbers.each do |winning_number|
-		counter = 0
+		
 		i=0
 		4.times do
 			if winning_number[i] == my_ticket[i] 
@@ -17,12 +17,18 @@ def grand_bash
 			end
 			i += 1
 		end
-		
+	
+	
 
 		if counter == 3
-			puts "true"
+			true
 		else
-			puts "false"
+			false
 		end
   	end
+  	
+  	 if true
+  	 	then 
+  	 	 true
+  	 	end
 end
